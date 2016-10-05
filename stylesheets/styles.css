@@ -1,0 +1,26 @@
+/**
+Enable when using the pager CSS in typography partial
+@mixin inline{
+  display: inline;
+}
+*/
+/**
+ *
+ * This method returns the content wrapped in the requested media query. It also checks to see if
+ * the no-query variable has been defined. If the variable exists the content is output and wrapped
+ * in a class as defined by the variable.
+ *
+ * The $no-query defined class is to wrap content in when there are no media queries available for
+ * the current browser. This is typically provided by a javascript plugin like modernizr.
+ *
+ * $bp: The breakpoint in pixels
+ *
+ * $no-ie: To override this breakpoint and not use it in browsers that don't support media queries
+ * pass true as the second argument.
+ *
+ */
+div {
+  background: red;
+  border: 1px black solid;
+  width: 4em;
+  height: 4em; }
