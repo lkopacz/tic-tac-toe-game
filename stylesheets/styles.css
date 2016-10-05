@@ -19,8 +19,12 @@ Enable when using the pager CSS in typography partial
  * pass true as the second argument.
  *
  */
+main {
+  width: 600px; }
+
 div {
   background: red;
   border: 1px black solid;
-  width: 4em;
-  height: 4em; }
+  width: 33%;
+  height: 13em;
+  float: left; }
