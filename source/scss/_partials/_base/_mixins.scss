@@ -8,19 +8,23 @@
   font-size: $number/$base-font-size + rem;
 }
 
-//Mixin where you can include media query. Reference within element by @include mquery($size) {} 
+//Mixin where you can include media query. Reference within element by @include mquery($size) {}
 @mixin mquery($size) {
   @if $size == small {
     @media (min-width:$bp-small) {
-      @content; 
+      @content;
     }
   }
 
   @else if $size == medium {
     @media (min-width:$bp-med) {
-      @content;       
+      @content;
     }
   }
+}
+
+@mixin hex2rgba-bg($hexcolor, $opacity) {
+  background-color: rgba($hexcolor, $opacity);
 }
 
 @mixin placeholder($c-placeholder: '#888888') {

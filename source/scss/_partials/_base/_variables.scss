@@ -4,7 +4,7 @@ $white: #ffffff;
 $almost-black: #1a0000;
 
 // Base Font Size
-$base-font-size: 16;
+$base-font-size: 10;
 
 // Function to convert pixels to ems
 @function px-to-em($px, $denominator: $base-font-size) {

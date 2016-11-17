@@ -26,5 +26,36 @@ div {
   background: red;
   border: 1px black solid;
   width: 33%;
-  height: 13em;
+  height: 12.375rem;
   float: left; }
+  div span {
+    position: relative; }
+  div span:before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0);
+    height: 8px;
+    width: 100px;
+    position: absolute;
+    top: 96px;
+    left: 50px;
+    transition-property: background,transform;
+    transition-duration: .3s;
+    transform: rotate(45deg); }
+  div span:after {
+    content: "";
+    background-color: rgba(255, 255, 255, 0);
+    height: 8px;
+    width: 100px;
+    position: absolute;
+    top: 96px;
+    left: 50px;
+    transform: rotate(-45deg);
+    transition-property: background,transform;
+    transition-delay: .3s;
+    transition-duration: .3s; }
+
+.clicked span:before {
+  background: white; }
+
+.clicked span:after {
+  background: white; }
