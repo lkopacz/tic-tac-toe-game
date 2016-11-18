@@ -8,9 +8,10 @@ function getPlayerPosition() {
     var position = $(this).position();
     var playerLeftMin = position.left-8;
     var playerTopMin = position.top-8;
-    var playerRightMax = playerLeftMin + 200;
-    var playerBottomMax = playerTopMin + 200;
+    //var playerRightMax = playerLeftMin + 200;
+    //var playerBottomMax = playerTopMin + 200;
     var playerDimensions = [playerLeftMin, playerTopMin];
+    return playerDimensions;
   });
 }
 
@@ -22,6 +23,7 @@ function computerTurn(){
   var randomLeft = Math.floor(Math.random() * 600);
   var randomTop = Math.floor(Math.random() * 600);
   var randomPosition = [randomLeft, randomTop];
+  return randomPosition;
 }
 
 var computerPosition = computerTurn();
