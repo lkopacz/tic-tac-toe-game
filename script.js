@@ -29,9 +29,10 @@ function computerTurn(){
 var computerPosition = computerTurn();
 
 function testPosition() {
-  var x = randomPosition[0];
-  var y = randomPosition[1];
+  var x = computerPosition[0];
+  var y = computerPosition[1];
   while (x < playerDimensions[0] && x > playerDimensions[1] && y < playerDimensions[2] && y > playerDimensions[3]) {
     computerTurn();
   }
 }
+testPosition();
