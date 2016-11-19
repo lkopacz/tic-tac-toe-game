@@ -29,7 +29,10 @@ div {
   height: 12.375rem;
   float: left; }
   div span {
-    position: relative; }
+    position: relative;
+    transition-property: border,transform;
+    transition-duration: .3s;
+    transition-delay: 3s; }
   div span:before {
     content: "";
     background-color: rgba(255, 255, 255, 0);

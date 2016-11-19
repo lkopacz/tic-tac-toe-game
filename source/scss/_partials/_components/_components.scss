@@ -9,6 +9,9 @@ div {
 	float:left;
 	span{
 		position:relative;
+		transition-property: border,transform;
+		transition-duration: .3s;
+		transition-delay: 3s;
 	}
 	span:before {
 		content:"";
