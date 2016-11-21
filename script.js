@@ -13,7 +13,6 @@ var y = computerPosition[1];
 
 var checkClicked = true; //sets a base variable so that it doesn't popup for everytime we click something.
 function getPlayerPosition() {
-  $( "div" ).on('click', function() {
     if (checkClicked === true && $(this).hasClass("clicked")) {
       alert("Please select a blank square"); //sets alert if something ALREADY has the class clicked
     }
@@ -46,6 +45,5 @@ function getPlayerPosition() {
     } else if (x < 600 && y < 600) {
       $(".box-9").addClass("clicked o");
     }
-  });
 }
-getPlayerPosition();
+$( "div" ).on('click', getPlayerPosition);
