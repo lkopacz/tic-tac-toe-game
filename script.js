@@ -10,11 +10,9 @@ var computerPosition = computerTurn();
 var x = computerPosition[0];
 var y = computerPosition[1];
 
-
-var checkClicked = true; //sets a base variable so that it doesn't popup for everytime we click something.
 function getPlayerPosition() {
   $( "div" ).on('click', function() {
-    if (checkClicked === true && $(this).hasClass("clicked")) {
+    if ($(this).hasClass("clicked")) {
       alert("Please select a blank square"); //sets alert if something ALREADY has the class clicked
     }
     $(this).addClass("clicked x"); //adds the clicked class to the div that is marked an x
