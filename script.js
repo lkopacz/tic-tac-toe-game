@@ -11,7 +11,6 @@ var x = computerPosition[0];
 var y = computerPosition[1];
 
 function getPlayerPosition() {
-  $( "div" ).on('click', function() {
     if ($(this).hasClass("clicked")) {
       alert("Please select a blank square"); //sets alert if something ALREADY has the class clicked
     }
@@ -44,6 +43,5 @@ function getPlayerPosition() {
     } else if (x < 600 && y < 600) {
       $(".box-9").addClass("clicked o");
     }
-  });
 }
-getPlayerPosition();
+$( "div" ).on('click', getPlayerPosition);
